@@ -1,4 +1,4 @@
-This is a server-side web application that parses [Steve Koepke](http://www.calweb.com/~skoepke/)'s [list](http://www.jmarshall.com/events/list.txt) of Bay Area shows, and exposes the data in JSON format.
+This is a server-side web application that parses [Steve Koepke](http://www.calweb.com/~skoepke/)'s [list](http://www.jmarshall.com/events/list.txt) of Bay Area shows, and exposes the data in JSON format so that it can be consumed by something like [this](https://github.com/markmatney/norcal-shows).
 
 Better documentation coming soon...
 
