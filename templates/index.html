@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>API</title>
+    <title>NorCal Shows Data</title>
   </head>
   <body>
-    <h1>Bay Area Shows API</h1>
+    <h1>NorCal Shows Data</h1>
     <p>Current version: <a href="{{ '/v' + versions['current'] }}">{{ versions['current'] }}</a></p>
     {% if versions['past']|length > 0 %}
-	<p>Past versions:</p>
-	<ul>
-		{% for v in versions['past'] %}
-		<li><a href="{{ '/v' + v }}">{{ v }}</a></li>
-		{% endfor %}
-	</ul>
-	{% endif %}
+      <p>Past versions:</p>
+      <ul>
+      {% for v in versions['past'] %}
+        <li><a href="{{ '/v' + v }}">{{ v }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
   </body>
 </html>
