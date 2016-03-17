@@ -14,7 +14,7 @@ application.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 theList = thelist.TheList()
 apiVersions ={
-    'current': '0.1',
+    'current': '0.1.0',
     'past': []
     }
 
@@ -23,8 +23,8 @@ def index():
     return flask.render_template('index.html', versions=apiVersions)
 
 
-@application.route('/v0.1/', methods=['GET'])
-@application.route('/v0.1/<path>/', methods=['GET'])
+@application.route('/v0.1.0/', methods=['GET'])
+@application.route('/v0.1.0/<path>/', methods=['GET'])
 def api(path=None):
     if path == None or path in ['shows', 'venues', 'artists']:
         body = {'data': theList.get(path)}
